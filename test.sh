@@ -5,7 +5,7 @@ if [ ! -f index.html ]; then
   echo "ERROR: index.html not found!" 
   exit 1 
 fi 
-if ! grep -q "Приложение работает!" index.html; then 
+if ! grep -q "КалашниковПРИ-О-231" index.html; then 
   echo "ERROR: content mismatch!" 
   exit 1 
 fi 
