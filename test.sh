@@ -1,12 +1,12 @@
 #!/bin/bash 
 set -e 
-echo "Запуск тестов..." 
+echo "Running tests..." 
 if [ ! -f index.html ]; then 
-  echo "ОШИБКА: index.html не найден!" 
+  echo "ERROR: index.html not found!" 
   exit 1 
 fi 
 if ! grep -q "Приложение работает!" index.html; then 
-  echo "ОШИБКА: содержимое не совпадает!" 
+  echo "ERROR: content mismatch!" 
   exit 1 
 fi 
-echo "Все тесты пройдены успешно." 
+echo "All tests passed." 
